@@ -11,7 +11,7 @@ $(document).ready(function(){
       clicked = true;
     }
     else {
-      find('p').css('opacity',1);
+       $(this).find('p').css('opacity',0);
     }
   });
 });
