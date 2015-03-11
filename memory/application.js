@@ -5,10 +5,10 @@ $(document).ready(function(){
     $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
   };
   var clicked = false;
-  $('.card').click(function(){
-    if(clicked == false){
+  $('.card').on(function(){
+    if(on == false){
       $(this).find('p').css('opacity', 1);
-      clicked = true;
+      on = true;
     }
     else {
        $(this).find('p').css('opacity',0);
