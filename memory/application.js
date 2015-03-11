@@ -4,7 +4,14 @@ $(document).ready(function(){
   for(i in card_array){
     $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
   };
+  var clicked = false;
   $('.card').click(function(){
-    $(this).find('p').css('opacity', 1);
+    if(clicked == false){
+      $(this).find('p').css('opacity', 1);
+      clicked = true;
+    }
+    else {
+      .find('p').css('opacity',1);
+    }
   });
 });
