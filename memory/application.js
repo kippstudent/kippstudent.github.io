@@ -4,4 +4,7 @@ $(document).ready(function(){
   for(i in card_array){
     $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
   }
+  $('.card').click(function(){
+    $(this).find('p').css('opacity', 1);
+  });
 });
