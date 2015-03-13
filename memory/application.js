@@ -6,6 +6,7 @@ $(document).ready(function(){
   };
   var clicked = false;
   $('.card').on(function(){
+   //$(this 
     if(on == false){
       $(this).find('p').css('opacity', 1);
       on = true;
