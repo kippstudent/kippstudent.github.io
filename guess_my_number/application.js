@@ -6,7 +6,7 @@ $(document).ready(function(){
   $('button').on('click', function(){
     //save their guess as a variable
     var play_guess = parseInt($('input').val());
-    
+    console.log(play_guess);
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     
