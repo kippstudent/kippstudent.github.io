@@ -9,7 +9,7 @@ $(document).ready(function(){
     console.log(play_guess);
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
-    if(play_guess)===(comp_integer)
+    if((play_guess)===(comp_integer)){
       //what happens if the guess is correct?
       
     //if the user guessed too high...
@@ -19,6 +19,6 @@ $(document).ready(function(){
     //otherwise, the user guessed too low...
     
       //update the 'feedback' paragraph to tell them to guess higher
-    
+    }
   });
 });
