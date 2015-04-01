@@ -21,7 +21,7 @@ $(document).ready(function(){
       //update the 'feedback' paragraph to tell them to guess lower
       
     //otherwise, the user guessed too low...
-    console.log("number too high");
+    console.log("number too low");
       //update the 'feedback' paragraph to tell them to guess higher
     
   });
