@@ -17,7 +17,7 @@ $(document).ready(function(){
     else if(play_guess>comp_integer){
       console.log("number too high");
     }
-    else(play_guess<comp_integer){
+    else{
       //update the 'feedback' paragraph to tell them to guess lower
       
     //otherwise, the user guessed too low...
