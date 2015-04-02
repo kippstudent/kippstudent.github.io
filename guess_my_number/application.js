@@ -11,17 +11,17 @@ $(document).ready(function(){
     //if the user guessed the correct number...
     if(play_guess===comp_integer){
       //what happens if the guess is correct?
-      console.log("Correct!");
+      $("#feedback").append("Correct!");
     }
     //if the user guessed too high...
     else if(play_guess>comp_integer){
-      console.log("number too high");
+ $("#feedback").append("number too high!");
     }
     else
       //update the 'feedback' paragraph to tell them to guess lower
       
-    //otherwise, the user guessed too low...
-    console.log("number too low");
+    //otherwis$("#feedback").append("number too high!");e, the user guessed too low...
+    $("#feedback").append("number too low!");
       //update the 'feedback' paragraph to tell them to guess higher
     
   });
