@@ -7,12 +7,13 @@ $(document).ready(function(){
   $('button').on('click', function(){
     $("#feedback").empty();
     //save their guess as a variable
-    var guess += 1
+    guess += 1;
     var play_guess = parseInt($('input').val());
     console.log(play_guess);
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
-    $("#guess_counter")= var guess
+    $("#guess_counter").empty();
+    $("#guess_counter").append("guesses so far: "+guess);
     if(play_guess===comp_integer){
       //what happens if the guess is correct?
       $("#feedback").append("Correct!");
