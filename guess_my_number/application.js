@@ -4,7 +4,7 @@ $(document).ready(function(){
   console.log(comp_integer);
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-    $("feedback").empty()
+    $("#feedback").empty()
     //save their guess as a variable
     var play_guess = parseInt($('input').val());
     console.log(play_guess);
