@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var guess=0;
+  var guess = 0;
   //find a way for the program to choose a random number between 1 and 100, save this as a variable
   var comp_integer = Math.floor(Math.random()*100);
   console.log(comp_integer);
@@ -13,7 +13,7 @@ $(document).ready(function(){
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     $("#guess_counter").empty();
-    $("#guess_counter").append("guesses so far: "+guess);
+    $("#guess_counter").append("guesses so far: " + guess);
     if(play_guess===comp_integer){
       //what happens if the guess is correct?
       $("#feedback").append("Correct!");
