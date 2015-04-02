@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var guess=0;
   //find a way for the program to choose a random number between 1 and 100, save this as a variable
   var comp_integer = Math.floor(Math.random()*100);
   console.log(comp_integer);
@@ -6,10 +7,12 @@ $(document).ready(function(){
   $('button').on('click', function(){
     $("#feedback").empty();
     //save their guess as a variable
+    var guess += 1
     var play_guess = parseInt($('input').val());
     console.log(play_guess);
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
+    $("#guess_counter")= var guess
     if(play_guess===comp_integer){
       //what happens if the guess is correct?
       $("#feedback").append("Correct!");
@@ -24,6 +27,6 @@ $(document).ready(function(){
     //otherwis$("#feedback").append("number too high!");e, the user guessed too low...
     $("#feedback").append("number too low!");
       //update the 'feedback' paragraph to tell them to guess higher
-    
+    $("#guess_counter").empty();
   });
 });
