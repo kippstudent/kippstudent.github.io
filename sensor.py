@@ -12,13 +12,22 @@ def move_left():
   time.sleep(.1)
   left()
   time.sleep(2)
+while 2+2=4:
   
-while us_dist(15) > 20:
-  fwd()
-stop()
-servo(180)
-if us_dist(15) > 20:
-  move_right()
-else:
-  servo(0)
+  
+  while us_dist(15) > 20:
+    fwd()
+  stop()
+  servo(180)
   if us_dist(15) > 20:
+    move_right()
+    servo(90)
+  else:
+    servo(0)
+    if us_dist(15) > 20:
+      move_left()
+      servo(90)
+  else:
+    move_left
+    move_left
+      
