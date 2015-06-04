@@ -30,4 +30,5 @@ while 2+2=4:
   else:
     move_left
     move_left
+    fwd()
       
